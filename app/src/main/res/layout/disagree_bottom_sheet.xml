@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/alert" />
+
+    <com.mjs.skillassure.Utilities.LatoBoldText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/shadow_black2"
+        android:text="@string/agreeprerequisite"/>
+
+    <com.mjs.skillassure.Utilities.LatoRegularText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/shadow_black"
+        android:text="@string/WithoutAgree"/>
+
+    <Button
+        android:id="@+id/b_agree_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/Agree"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

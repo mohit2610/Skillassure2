@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresentationLayer.Activities.ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            app:cardCornerRadius="14dp">
+
+            <ViewFlipper
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:autoStart="true"
+                app:indicatorStrokeColor="@color/shadow_black"
+                app:indicatorFillColor="@color/sky_blue_dark"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.mjs.skillassure.Utilities.LatoSemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/shadow_black"
+            android:text="@string/my_categories"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_catrgories_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/recycler_view_background_stoke"
+            android:padding="10dp" />
+
+        <com.mjs.skillassure.Utilities.LatoSemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/shadow_black"
+            android:text="@string/MyProgress"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/recycler_view_background_stoke">
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/candidate_progress"
+                    tools:progress="50" />
+
+                <com.mjs.skillassure.Utilities.LatoBlackText
+                    android:id="@+id/progress_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="50%"
+                    android:textColor="@color/light_blue"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/layout"
+                android:orientation="vertical">
+
+                <com.mjs.skillassure.Utilities.LatoBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yourprogress"
+                    android:textColor="@color/shadow_black2"
+                    android:textSize="22sp" />
+
+                <com.mjs.skillassure.Utilities.LatoSemiBoldText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:gravity="start"
+                    android:text="@string/yourprogressMeasured"
+                    android:textColor="@color/shadow_black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.mjs.skillassure.Utilities.LatoSemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/shadow_black"
+            android:text="@string/MyReportCard"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_report_card_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <com.mjs.skillassure.Utilities.LatoSemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/shadow_black"
+            android:text="@string/Mycourses"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_course_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <com.mjs.skillassure.Utilities.LatoSemiBoldText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/shadow_black"
+            android:text="@string/MyAssessments"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_assessment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/light_blue">
+
+        </View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/blue">
+
+        </View>
+
+    </LinearLayout>
+
+</ScrollView>

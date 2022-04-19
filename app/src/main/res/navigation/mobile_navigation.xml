@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profileFragment"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_feedbackFragment"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.Feedback.FeedbackFragment"
+        android:label="feedback_fragment"
+        tools:layout="@layout/feedback_fragment" />
+    <fragment
+        android:id="@+id/nav_helpAndSupport"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.HelpAndSupport.HelpAndSupport"
+        android:label="help_and_support_fragment"
+        tools:layout="@layout/help_and_support_fragment" />
+    <fragment
+        android:id="@+id/nav_shareFragment"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.Share.ShareFragment"
+        android:label="share_fragment"
+        tools:layout="@layout/share_fragment" />
+    <fragment
+        android:id="@+id/nav_settingFragment"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.Settings.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_logoutFragment"
+        android:name="com.mjs.skillassure.PresentationLayer.Activities.ui.Logout.LogoutFragment"
+        android:label="logout_fragment"
+        tools:layout="@layout/logout_fragment" />
+</navigation>

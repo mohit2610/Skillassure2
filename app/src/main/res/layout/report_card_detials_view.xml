@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="26sp"
+    android:orientation="vertical">
+    <com.mjs.skillassure.Utilities.LatoBoldText
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/shadow_black"
+        android:text="@string/Slogn2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mjs.skillassure.Utilities.LatoSemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ans"
+                android:textColor="@color/red"
+                android:textSize="16sp"/>
+            <com.mjs.skillassure.Utilities.LatoSemiBoldText
+                android:id="@+id/fox_wrong_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/Password"
+                android:textColor="@color/red"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <com.mjs.skillassure.Utilities.LatoSemiBoldText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct"
+                android:textColor="@color/green"
+                android:textSize="16sp"/>
+            <com.mjs.skillassure.Utilities.LatoSemiBoldText
+                android:id="@+id/correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Password"
+                android:textColor="@color/green"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/somke_white"/>
+
+</LinearLayout>
